@@ -1,8 +1,26 @@
-@import "variable";
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+@import "variables";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800;900&display=swap');
+
 
 html {
-  font-size: 62.5% // 10px
+  font-size: 62.5%; // 10px
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 8px
+  }
+
+  @include respond(phone) {
+    font-size: 50%; // 6px
+  }
+
+  @include respond(big-desktop) {
+    font-size: 100%;
+  }
 }
 
 * {
@@ -14,10 +32,24 @@ html {
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 1.6rem;
+  color: $color-blue-2;
 }
 
 .container {
   width: 100vw;
   min-height: 100vh;
   background-color: $color-light;
+  padding: 5rem;
+}
+
+@for $i from 1 to 10 {
+  .mt-#{$i} {
+    margin-top: #{$i}rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+  .my-#{$i} {
+    margin: #{$i}rem;
+  }
 }
