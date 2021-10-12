@@ -1,0 +1,23 @@
+@import "variable";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+html {
+  font-size: 62.5% // 10px
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $color-light;
+}
