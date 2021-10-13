@@ -1,0 +1,21 @@
+@import "../../scss/mixins.scss";
+
+.MenuList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem 3rem;
+  padding: 5rem 2rem;
+  
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    width: 70rem;
+    margin: auto;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    width: 100%;
+  }
+}

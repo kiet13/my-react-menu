@@ -6,7 +6,7 @@ const categoriesMap = {
   all: "All",
   breakfast: "Breakfast",
   lunch: "Lunch",
-  Shakes: "Shakes"
+  shakes: "Shakes"
 }
 
 export default function FilterBar(props) {

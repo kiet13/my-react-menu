@@ -52,4 +52,10 @@ body {
   .my-#{$i} {
     margin: #{$i}rem;
   }
+  .ml-#{$i} {
+    margin-left: #{$i}rem;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}rem;
+  }
 }

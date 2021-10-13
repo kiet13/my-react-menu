@@ -1,0 +1,54 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.MenuItem {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 23rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 0.4rem solid $color-gold;
+    border-radius: 0.3rem;
+    flex-shrink: 0;
+    margin-right: 2rem;
+
+    @include respond(tab-land) {
+      width: 30rem;
+      height: 20rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      height: 30rem;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+
+.ItemTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px dotted $color-blue-1;
+  color: $color-blue-1;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+
+.ItemInfo {
+  line-height: 1.6;
+}
+
+.Price {
+  color: $color-gold;
+  font-weight: 700;
+}
